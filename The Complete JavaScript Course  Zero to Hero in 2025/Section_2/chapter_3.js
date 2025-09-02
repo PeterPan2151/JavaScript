@@ -43,6 +43,7 @@ for (let i = 0; i < array_2d.length; i++) {
     for (let j = 0; j < array_2d[i].length; j++){
         console.log(array_2d[i][j])
     }
+    let sampleScope = 2
 }
 
 // Dictionaries
@@ -63,3 +64,23 @@ console.log(bio)
 bio['friends'] = {'juan': 'good with jokes'}
 console.log(bio)
 console.log(bio['friends']['juan'])
+
+
+// Scope
+// Everything we defined so far is in global scope
+// console.log(sampleScope) // This brings an error, since this variable is declared in a for loop scope
+
+// Error handleing
+const brokenObject = {
+    word: 'nice'
+}
+function problematicCodeBlock(){
+    try{
+        const sub_object = brokenObject.hello.world
+        console.log(sub_object)
+    } catch (err){
+        console.log('We got an error')
+    }
+}
+
+problematicCodeBlock()
