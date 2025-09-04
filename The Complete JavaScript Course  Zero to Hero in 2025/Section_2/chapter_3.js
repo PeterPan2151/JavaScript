@@ -5,6 +5,7 @@ console.log(string_length)
 let combined_string = 'Hello World ' + text
 console.log(combined_string)
 
+
 const contains_letter_a = text.indexOf('a')
 let split_text = text.split(' ')
 console.log(split_text)
