@@ -12,3 +12,4 @@ function evens(input) {
 
 let integers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(evens(integers))
+console.log(evens(integers))
